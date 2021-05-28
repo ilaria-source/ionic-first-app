@@ -1,22 +1,21 @@
-import { Component } from "@angular/core";
-import { NavController } from "@ionic/angular";
+import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component(
   {
-    selector: 'page-home',
+    selector: 'app-home',
     templateUrl: 'home.html'
-  })
+  }  )
 
   export class HomePage
   {
-
-    constructor (public navCtrl: NavController)
+    constructor(public navCtrl: NavController)
     {
-
     }
 
-    sayHello()
+    sayHello(testo: string)
     {
-      console.log('Hello, world!');
+      testo= 'hello world';
+      console.log(testo);
     }
   }
